@@ -1,4 +1,3 @@
-# run_analysis.R
 library(dplyr)
 
 # Download and unzip the dataset
@@ -6,7 +5,7 @@ url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR
 download.file(url, destfile = "data.zip", mode = "wb")
 unzip("data.zip")
 
-# Read metadata: feature names and activity labels
+# Read feature names and activity labels
 features <- read.table("UCI HAR Dataset/features.txt")
 activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
 
